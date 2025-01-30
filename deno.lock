@@ -6,7 +6,8 @@
     "npm:@apollo/server@^4.11.3": "4.11.3_graphql@16.10.0",
     "npm:graphql@^16.10.0": "16.10.0",
     "npm:mongodb@^6.12.0": "6.12.0",
-    "npm:npm@^11.1.0": "11.1.0"
+    "npm:npm@^11.1.0": "11.1.0",
+    "npm:standalone@^0.0.1": "0.0.1"
   },
   "jsr": {
     "@std/assert@1.0.11": {
@@ -1835,6 +1836,9 @@
         "minipass@7.1.2"
       ]
     },
+    "standalone@0.0.1": {
+      "integrity": "sha512-WFQeSdcDvQXKx78hMcSXZ82dsT6lz+rcH31oc5/62Mwh8d++AHI51Nus4TKYsEKQd2I5zaW39dbVPusBxBXEwg=="
+    },
     "statuses@2.0.1": {
       "integrity": "sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ=="
     },
@@ -2047,7 +2051,8 @@
       "npm:@apollo/server@^4.11.3",
       "npm:graphql@^16.10.0",
       "npm:mongodb@^6.12.0",
-      "npm:npm@^11.1.0"
+      "npm:npm@^11.1.0",
+      "npm:standalone@^0.0.1"
     ]
   }
 }

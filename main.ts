@@ -26,7 +26,7 @@ const server = new ApolloServer({
 });
 
 const { url } = await startStandaloneServer(server, {
-  context: async () => ({ciudadCollection}),
+  context: async () =>  ({ciudadCollection}),
 });
 
 console.info(`Server ready at ${url}`);

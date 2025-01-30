@@ -2,6 +2,7 @@ import { Collection } from "mongodb"
 import type { CiudadModel } from "./types.ts"
 import { GraphQLError } from "graphql"
 import { ObjectId } from "mongodb"
+import { parentPort } from "worker_threads";
 
 type contexto ={
     CiudadColleccion: Collection<CiudadModel>,
@@ -22,5 +23,13 @@ export const resolvers ={
             if(!ciudades) throw new GraphQLError("No hay ciudades");
             return ciudades;
         },
+    },
+    Ciudad:{
+        id: (parent: CiudadModel): string => parent._id!.toString(),
+
+        timezone:async(parent:CiudadModel):Promise<string> =>{
+            const API_KEY = Deno.env.get("API_KEY");
+            if(!API_KEY)throw new GraphQLError("Se necesita una api key");
+        }
     }
 }
