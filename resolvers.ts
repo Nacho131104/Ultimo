@@ -28,7 +28,7 @@ export const resolvers ={
 
     Ciudad:{
         id: (parent: CiudadModel): string => parent._id!.toString(),
-        /*
+        
         timezone:async(parent:CiudadModel):Promise<string> =>{
             const API_KEY = Deno.env.get("API_KEY");
             if(!API_KEY)throw new GraphQLError("Se necesita una api key");
@@ -50,6 +50,6 @@ export const resolvers ={
                 
 
         }
-        */
+        
     }
 }
