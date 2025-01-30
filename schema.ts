@@ -13,7 +13,7 @@ export const schema =`#graphql
 
     type Query{
         getCiudad(id: String!): Ciudad!
-        getCiudades: [Ciudad!]!
+        getCiudades: [Ciudad]!
     }
 
 
