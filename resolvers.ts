@@ -2,7 +2,6 @@ import { Collection } from "mongodb"
 import type { CiudadModel } from "./types.ts"
 import { GraphQLError } from "graphql"
 import { ObjectId } from "mongodb"
-import { parentPort } from "worker_threads";
 import { APIcity } from "./types.ts";
 
 type contexto ={
@@ -26,7 +25,7 @@ export const resolvers ={
         },
     },
 
-    
+
     Ciudad:{
         id: (parent: CiudadModel): string => parent._id!.toString(),
 
