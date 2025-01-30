@@ -4,6 +4,8 @@ export type CiudadModel = OptionalId<{
     poblacion: number,
     nombre: string,
     pais: string,
+    latitud: number,
+    longitud: number,
     timezone: string,
 }>
 
